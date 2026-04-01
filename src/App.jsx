@@ -230,7 +230,7 @@ function App() {
             </p>
             <div className="cta-row">
               <a className="btn btn-primary" href="#lokalen">
-                Läs publikinfo
+                Publik
               </a>
               <button className="btn btn-ghost" onClick={jumpToArranger}>
                 Arrangera hos oss
