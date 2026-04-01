@@ -157,6 +157,11 @@ function InfoPanel({ section, kicker }) {
             ))}
           </ul>
         ) : null}
+        {section.id === 'har-du-en-ide' ? (
+          <a className="btn btn-primary" href="mailto:klubbkerberos@gmail.com">
+            Kontakt
+          </a>
+        ) : null}
       </article>
     </section>
   )
@@ -270,25 +275,6 @@ function App() {
           {arrangerSections.map((section) => (
             <InfoPanel key={section.id} section={section} kicker="Arrangör" />
           ))}
-
-          <section className="panel" id="kontakt-cta">
-            <MediaBackground
-              media={{
-                type: 'image',
-                src: asset('media/images/har-du-en-ide.jpg'),
-              }}
-              title="Kontakt"
-            />
-            <div className="panel-overlay" />
-            <div className="panel-content">
-              <p className="kicker">Kontakt</p>
-              <h2>Vill du ta nästa steg?</h2>
-              <p>Hör av dig så hjälper vi dig vidare med ditt arrangemang.</p>
-              <a className="btn btn-primary" href="mailto:klubbkerberos@gmail.com">
-                Kontakt
-              </a>
-            </div>
-          </section>
         </section>
       )}
 
