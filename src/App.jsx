@@ -191,12 +191,14 @@ function App() {
     if (!showArranger) {
       setShowArranger(true)
       requestAnimationFrame(() => {
-        arrangerRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        const firstArrangerPanel = document.getElementById('arrangera-hos-oss')
+        firstArrangerPanel?.scrollIntoView({ behavior: 'smooth', block: 'start' })
       })
       return
     }
 
-    arrangerRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    const firstArrangerPanel = document.getElementById('arrangera-hos-oss')
+    firstArrangerPanel?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 
   return (
@@ -265,7 +267,7 @@ function App() {
           id="arrangor"
         >
           {arrangerSections.map((section) => (
-            <InfoPanel key={section.id} section={section} kicker="Arrangor" />
+            <InfoPanel key={section.id} section={section} kicker="Arrangör" />
           ))}
         </section>
       )}

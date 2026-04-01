@@ -166,9 +166,7 @@ ul {
 .arranger-shell {
   display: none;
   background: linear-gradient(180deg, #090d11 0%, #0f171c 60%, #111f1f 100%);
-  padding: 1.6rem 0 2.6rem;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
+  padding: 0;
   animation: sectionReveal 450ms ease;
 }
 
@@ -250,6 +248,10 @@ ul {
 }
 
 @media (max-width: 760px) {
+  html {
+    scroll-snap-type: y proximity;
+  }
+
   .floating-nav {
     bottom: 1rem;
     right: 1rem;
