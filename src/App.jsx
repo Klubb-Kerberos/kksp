@@ -29,7 +29,7 @@ const publikSections = [
     id: 'mat-dryck',
     title: 'Mat och dryck',
     body:
-      'Du får ta med egen mat och dryck till våra evenemang, inklusive alkohol för privat bruk. Ingen försäljning sker på plats.',
+      'Du får ta med egen mat och dryck till våra evenemang. Alkoholfri dryck och enklare snacks kan köpas på plats.',
     media: {
       type: 'image',
       src: asset('media/images/mat-och-dryck.jpg'),
