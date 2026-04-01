@@ -93,7 +93,7 @@ const arrangerSections = [
       'Arrangören ansvarar för publikens säkerhet, dörrkontroll och genomförande.',
       'Klubb Kerberos ansvarar för ljud, ljus, teknisk säkerhet och stöd.',
       'Hyresvärden ansvarar för lokalens grundskick och hyresavtal.',
-      'Ibland kan vi även erbjuda arrangörsstöd eller bidra till lokalhyran om vår budget tillåter. Hör gärna av dig så pratar vi om vad som är möjligt.',
+      'Ibland kan vi även erbjuda arrangörsstöd om vår budget tillåter. Hör gärna av dig så pratar vi om vad som är möjligt.',
     ],
     media: {
       type: 'image',
