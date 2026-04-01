@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 import './App.css'
 
+const asset = (path) => `${import.meta.env.BASE_URL}${path}`
+
 const publikSections = [
   {
     id: 'lokalen',
@@ -9,8 +11,8 @@ const publikSections = [
       'Klubb Kerberos är en fristående kulturlokal med scen, ljud och ljus. Vi ordnar tekniken så att arrangören kan fokusera på innehållet.',
     media: {
       type: 'video',
-      src: '/media/videos/lokalen.mp4',
-      poster: '/media/images/lokalen-poster.jpg',
+      src: asset('media/videos/lokalen.mp4'),
+      poster: asset('media/images/lokalen-poster.jpg'),
     },
   },
   {
@@ -20,7 +22,7 @@ const publikSections = [
       'Varje kväll är unik. Arrangören bestämmer upplägg, biljetter, tider och vad som händer på scenen.',
     media: {
       type: 'image',
-      src: '/media/images/evenemang.jpg',
+      src: asset('media/images/evenemang.jpg'),
     },
   },
   {
@@ -30,7 +32,7 @@ const publikSections = [
       'Du får ta med egen mat och dryck till våra evenemang, inklusive alkohol för privat bruk. Ingen försäljning sker på plats.',
     media: {
       type: 'image',
-      src: '/media/images/mat-och-dryck.jpg',
+      src: asset('media/images/mat-och-dryck.jpg'),
     },
   },
   {
@@ -40,7 +42,7 @@ const publikSections = [
       'Lokalen kan möbleras olika beroende på arrangemangets form: stående, sittande eller blandad setup.',
     media: {
       type: 'image',
-      src: '/media/images/moblering.jpg',
+      src: asset('media/images/moblering.jpg'),
     },
   },
   {
@@ -50,7 +52,7 @@ const publikSections = [
       'Vi har utrymningsvägar, brandskydd och tekniskt ansvar på plats. Arrangören ansvarar för publikhantering och trivsel under kvällen.',
     media: {
       type: 'image',
-      src: '/media/images/sakerhet-och-trivsel.jpg',
+      src: asset('media/images/sakerhet-och-trivsel.jpg'),
     },
   },
   {
@@ -60,7 +62,7 @@ const publikSections = [
       'Klubb Kerberos drivs av en ideell förening utan vinstintresse. Vårt mål är att skapa en plats där kultur får utrymme.',
     media: {
       type: 'image',
-      src: '/media/images/vilka-vi-ar.jpg',
+      src: asset('media/images/vilka-vi-ar.jpg'),
     },
   },
 ]
@@ -78,8 +80,8 @@ const arrangerSections = [
     ],
     media: {
       type: 'video',
-      src: '/media/videos/att-arrangera-hos-oss-sa-fungerar-det.mp4',
-      poster: '/media/images/att-arrangera-hos-oss-poster.jpg',
+      src: asset('media/videos/att-arrangera-hos-oss-sa-fungerar-det.mp4'),
+      poster: asset('media/images/att-arrangera-hos-oss-poster.jpg'),
     },
   },
   {
@@ -94,7 +96,7 @@ const arrangerSections = [
     ],
     media: {
       type: 'image',
-      src: '/media/images/kostnader-och-ansvar.jpg',
+      src: asset('media/images/kostnader-och-ansvar.jpg'),
     },
   },
   {
@@ -104,7 +106,7 @@ const arrangerSections = [
       'Hör av dig så ser vi om Klubb Kerberos är rätt plats för ditt arrangemang. Du står för innehållet - vi står för platsen, tekniken och förutsättningarna.',
     media: {
       type: 'image',
-      src: '/media/images/har-du-en-ide.jpg',
+      src: asset('media/images/har-du-en-ide.jpg'),
     },
   },
 ]
@@ -203,14 +205,14 @@ function App() {
         <MediaBackground
           media={{
             type: 'video',
-            src: '/media/videos/valkommen-till-klubb-kerberos.mp4',
-            poster: '/media/images/valkommen-till-klubb-kerberos-poster.jpg',
+            src: asset('media/videos/valkommen-till-klubb-kerberos.mp4'),
+            poster: asset('media/images/valkommen-till-klubb-kerberos-poster.jpg'),
           }}
           title="Publikinfo intro"
         />
         <div className="panel-overlay" />
         <div className="landing-stack">
-          <img className="landing-logo" src="/images/kklogo.svg" alt="Klubb Kerberos" />
+          <img className="landing-logo" src={asset('images/kklogo.svg')} alt="Klubb Kerberos" />
           <div className="panel-content landing-content">
             <p className="kicker">Klubb Kerberos</p>
             <h1>Välkommen till Klubb Kerberos</h1>
@@ -238,7 +240,7 @@ function App() {
         <MediaBackground
           media={{
             type: 'image',
-            src: '/media/images/vill-du-arrangera-nagot.jpg',
+            src: asset('media/images/vill-du-arrangera-nagot.jpg'),
           }}
           title="Fortsätt till arrangörinfo"
         />
