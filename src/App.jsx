@@ -68,7 +68,7 @@ const publikSections = [
     id: 'vilka-vi-ar',
     title: 'Vilka vi är',
     body:
-      'Klubb Kerberos drivs av en ideell förening utan vinstintresse. Vårt mål är att skapa en plats där kultur får utrymme.',
+      'Klubb Kerberos drivs av en ideell förening utan vinstintresse. Vårt mål är att skapa en plats där kultur får utrymme och där både publik och arrangörer kan känna sig hemma. Vill du hjälpa till? Vi tar gärna emot fler som vill vara med och bidra under spelkvällar eller på andra sätt. Hör av dig om du vill vara en del av Klubb Kerberos.',
     media: {
       type: 'image',
       src: asset('media/images/vilka-vi-ar.jpg'),
