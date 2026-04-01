@@ -252,8 +252,8 @@ function App() {
           <p className="kicker">För arrangörer</p>
           <h2>Vill du arrangera något?</h2>
           <p>
-            När publikinformationen är slut väljer du själv om du vill gå vidare till
-            arrangörssidan.
+            Har du idéer du vill förverkliga? Gå vidare och läs mer om hur du kan
+            arrangera hos oss.
           </p>
           <button className="btn btn-primary" onClick={jumpToArranger}>
             Arrangera hos oss
