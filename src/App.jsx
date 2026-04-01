@@ -37,9 +37,18 @@ const publikSections = [
   },
   {
     id: 'moblering',
-    title: 'Möblering',
-    body:
-      'Lokalen kan möbleras olika beroende på arrangemangets form: stående, sittande eller blandad setup.',
+    title: 'Praktisk information',
+    body: '',
+    bullets: [
+      'Lokalen ligger på Norra Järnvägsgatan 18, ingång via den vita dörren på husets östra sida.',
+      'Toalett finns i anslutning till lokalen.',
+      'Möbleringen varierar beroende på arrangemanget – ibland stående, ibland sittande eller en blandning.',
+      'Insläpp sker normalt cirka 30 minuter före start, om inte arrangören anger annat.',
+      'Utgång och återinträde brukar gå bra om inget annat anges.',
+      'Ljudnivån kan vara hög vid konserter – vi erbjuder gratis öronproppar om du behöver.',
+      'Åldersgräns kan variera mellan olika evenemang. Alkohol får endast medtas och drickas av personer över 18 år.',
+      'Kontakta oss gärna om du har särskilda behov kring tillgänglighet eller annat stöd, så hjälper vi till så långt vi kan.',
+    ],
     media: {
       type: 'image',
       src: asset('media/images/moblering.jpg'),
@@ -149,7 +158,7 @@ function InfoPanel({ section, kicker }) {
       <article className="panel-content">
         <p className="kicker">{kicker}</p>
         <h2>{section.title}</h2>
-        <p>{section.body}</p>
+        {section.body ? <p>{section.body}</p> : null}
         {section.bullets ? (
           <ul>
             {section.bullets.map((item) => (
