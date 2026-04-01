@@ -141,7 +141,14 @@ ul {
   color: #fff8ec;
   font-weight: 700;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.panel-content > .btn {
+  margin-top: 0.9rem;
 }
 
 .btn:hover {
